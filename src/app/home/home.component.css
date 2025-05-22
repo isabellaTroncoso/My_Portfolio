@@ -41,6 +41,11 @@ header.header {
   border-radius: 50%; /* gör den rund */
 }
 
+.logo img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 /* H1-stil */
 header h1 {
   font-size: 28px;
@@ -137,18 +142,18 @@ header h1 {
   background-color: #777;
 }
 
-.github-btn {
+.github-btn img {
+  width: 40px;
+  height: 40px;
+  background-color: white;
   border-radius: 8px;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.github-btn img {
-  width: 24px;
-  height: 24px;
-  display: block;
+.github-btn img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 
