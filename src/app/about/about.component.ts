@@ -1,11 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  showMore = false;
+
+  toggleReadMore() {
+    this.showMore = !this.showMore;
+  }
 
 }

@@ -1,6 +1,6 @@
 /* Importera Roboto från Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@media (min-width: 768px) { /* Desktop */
 /* Sektion med vit bakgrund */
 .skills-section {
   background-color: white;
@@ -80,4 +80,5 @@
   font-size: 1.1rem;
   font-weight: bold;
   color: #333;
+}
 }

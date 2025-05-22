@@ -1,1 +1,47 @@
-<p>about works!</p>
+<section id="about" class="about-me-container">
+  <div class="about-left">
+    <h2>About Me</h2>
+    <p>I’m a passionate Java full-stack developer who loves building responsive and dynamic web applications.</p>
+
+    <button (click)="toggleReadMore()" class="btn btn-dark">
+      {{ showMore ? 'Read Less' : 'Read More' }}
+    </button>
+
+    <div *ngIf="showMore" class="more-info">
+      <p>
+        I have hands-on experience with Java, Spring Boot, Angular, and REST APIs. I enjoy problem-solving and continuously improving my skills through projects and collaboration.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-right">
+    <div class="education">
+      <h3>Education</h3>
+      <ul>
+        <li>Java Full-stack Developer Program – [Your School], 2024</li>
+        <li>Bachelor’s Degree in [Your Subject] – [Your University], 2022</li>
+      </ul>
+    </div>
+
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>Java, Spring Boot</li>
+        <li>Angular, TypeScript</li>
+        <li>HTML, CSS, REST API</li>
+        <li>SQL, Git</li>
+      </ul>
+    </div>
+
+    <div class="hobbies">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Coding side-projects</li>
+        <li>Photography</li>
+        <li>Traveling</li>
+        <li>Reading tech blogs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
