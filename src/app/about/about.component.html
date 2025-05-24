@@ -1,47 +1,66 @@
 <section id="about" class="about-me-container">
-  <div class="about-left">
+   <div class="about-left">
     <h2>About Me</h2>
-    <p>I’m a passionate Java full-stack developer who loves building responsive and dynamic web applications.</p>
+    <p>
+  I’m a passionate Java full-stack developer who loves building responsive and dynamic web applications. 
+</p>
 
-    <button (click)="toggleReadMore()" class="btn btn-dark">
-      {{ showMore ? 'Read Less' : 'Read More' }}
-    </button>
+<!-- Visa Read More-knappen när showMore är FALSE -->
+<button *ngIf="!showMore" (click)="toggleReadMore()" class="btn btn-dark">
+  Read More
+</button>
 
-    <div *ngIf="showMore" class="more-info">
-      <p>
-        I have hands-on experience with Java, Spring Boot, Angular, and REST APIs. I enjoy problem-solving and continuously improving my skills through projects and collaboration.
-      </p>
-    </div>
+<!-- Visa text + Read Less-knappen när showMore är TRUE -->
+<div *ngIf="showMore" @fadeSlide class="more-info">
+  <p>
+    I have hands-on experience with Java, Spring Boot, Angular, and REST APIs. I enjoy problem-solving and
+    continuously improving my skills through projects and collaboration. I am highly motivated, detail-oriented and
+    enjoy learning new technologies to deliver high-quality work.
+  </p>
+
+  <button (click)="toggleReadMore()" class="btn btn-dark">
+    Read Less
+  </button>
+</div>
   </div>
 
   <div class="about-right">
-    <div class="education">
-      <h3>Education</h3>
-      <ul>
-        <li>Java Full-stack Developer Program – [Your School], 2024</li>
-        <li>Bachelor’s Degree in [Your Subject] – [Your University], 2022</li>
-      </ul>
-    </div>
-
-    <div class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>Java, Spring Boot</li>
-        <li>Angular, TypeScript</li>
-        <li>HTML, CSS, REST API</li>
-        <li>SQL, Git</li>
-      </ul>
-    </div>
-
-    <div class="hobbies">
-      <h3>Hobbies</h3>
-      <ul>
-        <li>Coding side-projects</li>
-        <li>Photography</li>
-        <li>Traveling</li>
-        <li>Reading tech blogs</li>
-      </ul>
+  <div class="section-with-icon">
+    <div class="icon-title">
+      <img src="/about/yh.png" alt="Education icon" />
+      <div class="text-content">
+        <h3>Education</h3>
+        <p>Fredrika Bremer High School, 2015 - 2018, <strong> Graphic Media</strong> </p>
+        <p>Technical Institute Stockholm Vocational University, 2024 - 2026, <strong> Java Developer</strong></p>
+      </div>
     </div>
   </div>
+
+  <div class="section-with-icon">
+    <div class="icon-title">
+      <img src="/about/java.png" alt="Skills icon" />
+      <div class="text-content">
+        <h3>Skills</h3>
+        <p>Java, Spring Boot, REACT, Angular</p>
+        <p>HTML, CSS, REST API, TypeScript</p>
+        <p>SQL, Git, TestDriving</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-with-icon">
+    <div class="icon-title">
+      <img src="/about/books.png" alt="Hobbies icon" />
+      <div class="text-content">
+        <h3>Hobbies</h3>
+        <p>Coding side-projects</p>
+        <p>Reading Books (goal: 50 books a year)</p>
+        <p>Play instrument electric bass</p>
+        <p>Go to the gym</p>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
+
 
