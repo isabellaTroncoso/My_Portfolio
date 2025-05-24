@@ -1,0 +1,83 @@
+/* Importera Roboto från Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@media (min-width: 768px) { /* Desktop */
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 300px;
+   display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;      
+  padding: 1rem;
+  margin-top: 70px;
+}
+
+.about-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-right .section-with-icon {
+  margin-bottom: 2rem;
+}
+
+.icon-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 17px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-title img {
+  width: 100px; 
+  height: auto;
+  object-fit: contain;
+}
+
+.text-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.text-content p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+
+button.btn {
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Övrig typografi */
+h2, h3, p, ul {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+}

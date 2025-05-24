@@ -1,1 +1,21 @@
-<p>contact works!</p>
+<section id="contact" class="contact-container">
+      <div class="contact-left">
+        <h2>Get in Touch</h2>
+        <p>Love to hear from you! Feel free to reach out with any questions or opportunities.</p>
+      </div>
+      <div class="contact-right">
+        <form class="contact-form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" [(ngModel)]="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" [(ngModel)]="email" required />
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" [(ngModel)]="message" required></textarea>
+
+          <button type="submit" class="btn btn-dark" [disabled]="!contactForm.form.valid">Send Message</button>
+        </form>
+      </div>
+    </section>
+
