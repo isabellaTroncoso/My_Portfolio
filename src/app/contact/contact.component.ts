@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import emailjs from '@emailjs/browser';
+
 
 @Component({
   selector: 'app-contact',
@@ -9,25 +11,35 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-name = '';
+  name = '';
   email = '';
   message = '';
 
   onSubmit() {
     if (this.name && this.email && this.message) {
-      console.log('Form submitted:', {
-        name: this.name,
-        email: this.email,
+      const serviceID = 'service_734c4fu';
+      const templateID = 'template_qj4235s';
+      const userID = 'W7P58MtfdwxWd6V3d';
+
+      const templateParams = {
+        from_name: this.name,
+        from_email: this.email,
         message: this.message
-      });
+      };
 
-      alert('Thank you for reaching out! I will get back to you soon.');
-
-      this.name = '';
-      this.email = '';
-      this.message = '';
+      emailjs.send(serviceID, templateID, templateParams, userID)
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Tack för ditt meddelande! Jag hör av mig så snart jag kan.');
+          this.name = '';
+          this.email = '';
+          this.message = '';
+        }, (err) => {
+          console.error('FAILED...', err);
+          alert('Något gick fel. Försök igen senare.');
+        });
     } else {
-      alert('Please fill in all fields before submitting.');
+      alert('Vänligen fyll i alla fält.');
     }
   }
 }
