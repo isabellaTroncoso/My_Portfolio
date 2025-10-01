@@ -51,3 +51,19 @@ Byggde en portfolio med:
 - Azure byggde automatiskt Angular-appen
 
 - Deployment blev tillgänglig via en publik URL
+
+Här visar jag processen jag följde för att deploya min portfolio i Azure.
+
+Steg 1:
+![Steg 1](public/screenshots/steg1.png)
+![Steg 1 del 2](public/screenshots/steg1p2.png)
+![Steg 1 del 3](public/screenshots/steg1p3.png)
+
+Steg 2:
+![Steg 2](public/screenshots/steg2.png)
+
+Steg 3:
+![Steg 3](public/screenshots/steg3.png)
+
+Steg 4:
+![Steg 4](public/screenshots/steg4.png)
