@@ -1,59 +1,53 @@
-# MyPortfolio
+ Isabella Troncoso – Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+Detta är mitt portfolio-projekt byggt i Angular och deployat i Azure Static Web Apps. Projektet visar mina tekniska kunskaper, projekt och erfarenheter på ett modernt sätt.
 
-## Development server
+------------------------------------------------------------------------------------------
+ 
+Syfte
 
-To start a local development server, run:
+Syftet med projektet är att:
 
-```bash
-ng serve
-```
+- Skapa ett personligt portfolio i Angular
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Lära mig grunderna i cloud computing och Azure
 
-## Code scaffolding
+- Deploya applikationen till molnet för att kunna visa den för arbetsgivare
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+------------------------------------------------------------------------------------------
 
-```bash
-ng generate component component-name
-```
+Teknisk bakgrund
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Traditionellt bygger man applikationer lokalt, men med molnet kan man:
 
-```bash
-ng generate --help
-```
+- Skala upp eller ner resurser beroende på behov
 
-## Building
+- Betala efter användning (prismodell i Azure)
 
-To build the project run:
+- Slippa underhålla egna servrar
 
-```bash
-ng build
-```
+Jag valde Azure Static Web Apps eftersom det är enkelt att deploya frontend-projekt och det finns en gratis tier.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+------------------------------------------------------------------------------------------
 
-## Running unit tests
+Hur jag gjorde
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Skapade Angular-projektet lokalt med ng new my-portfolio
 
-```bash
-ng test
-```
+Byggde en portfolio med:
 
-## Running end-to-end tests
+- Kort beskrivning av mig själv
 
-For end-to-end (e2e) testing, run:
+- Mina skol-/hobbyprojekt (GitHub-länkar)
 
-```bash
-ng e2e
-```
+- Lista på tekniska kunskaper
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- Pushade projektet till GitHub
 
-## Additional Resources
+- Deployade via Azure Static Web App:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Kopplade mitt GitHub-repo till Azure
+
+- Azure byggde automatiskt Angular-appen
+
+- Deployment blev tillgänglig via en publik URL
