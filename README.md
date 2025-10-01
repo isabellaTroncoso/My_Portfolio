@@ -66,4 +66,12 @@ Steg 3:
 ![Steg 3](public/screenshots/steg3.png)
 
 Steg 4:
-![Steg 4](public/screenshots/steg4.png)
+![Steg 4](public/screenshots/steg4(2).png)
+
+Min Action
+![Action](public/screenshots/action.png)
+
+LÄNKEN: 
+
+https://polite-sea-0acb7d303.1.azurestaticapps.net
+
