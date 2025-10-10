@@ -16,15 +16,19 @@ header.header {
   background-color: white;
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #ddd;
+  flex-wrap: nowrap; /* Håller allt på en rad */
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 0.75rem; /* finjustera avståndet mellan logon och h1 */
+  flex-direction: row; /* säkerställer horisontell layout */
+  gap: 1rem; /* lite mer luft mellan logga och text */
   background-color: white;
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #ddd;
+  flex-wrap: nowrap; /* hindrar radbrytning */
+  margin: 0px;
 }
 
 /* Logo och H1 i vänstergrupp */
@@ -35,10 +39,11 @@ header.header {
 }
 
 .logo img {
-  height: 60px;
-  width: 60px; /* samma som height */
-  object-fit: cover; /* beskär bilden så den fyller utrymmet snyggt */
-  border-radius: 50%; /* gör den rund */
+  height: 43px;
+  width: 43px;
+  object-fit: cover;
+  border-radius: 20%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .logo img:hover {
@@ -48,9 +53,13 @@ header.header {
 
 /* H1-stil */
 header h1 {
-  font-size: 28px;
+  font-size: 20px;
   color: black;
+  white-space: nowrap; /* förhindrar att brytas till ny rad */
+  margin: 0;
+  line-height: 1;
 }
+
 
 /* Navigation */
 .header-meny ul {

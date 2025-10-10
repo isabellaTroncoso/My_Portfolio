@@ -5,21 +5,80 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem;
+   padding: 2rem 1rem; 
   align-items: flex-start;
 }
 
 .about-left {
-  flex: 1;
-  min-width: 300px;
-   display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;     
-  text-align: center;      
-  padding: 1rem;
-  margin-top: 70px;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  line-height: 1.6;
+  max-width: 600px;
 }
+
+.about-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.about-left p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Minska mellanrummet mellan synlig och dold text */
+.more-info {
+  margin-top: -0.5rem;
+}
+
+/* Read More / Less-knapp */
+.read-toggle {
+  background: none;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.3s ease;
+}
+
+.read-toggle:hover {
+  color: #000;
+}
+
+.arrow {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.arrow.up {
+  transform: rotate(0deg);
+}
+
+.read-toggle:hover .arrow {
+  transform: translateY(2px);
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center; /* centrerar bilden */
+  margin-bottom: 1rem;
+  margin-top: -25px;
+}
+
+.profile-image img {
+  width: 250px;      /* kan justeras efter behov */
+  height: 250px;     /* håller kvadratisk form */
+  object-fit: cover; /* beskär bilden snyggt om den är större än 150x150 */
+  border-radius: 50%; /* rund profilbild */
+  border: 3px solid #333; /* valfritt, snygg ram */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 
 .about-right {
   flex: 1;
