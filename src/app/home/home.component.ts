@@ -11,4 +11,14 @@ import { ContactComponent } from '../contact/contact.component';
 })
 export class HomeComponent {
 
+   constructor() { }
+
+  ngAfterViewInit() {
+    const video: HTMLVideoElement | null = document.querySelector('.background-video');
+    if (video) {
+      video.muted = true; 
+      video.play().catch(err => console.log('Autoplay blocked:', err));
+    }
+  }
+
 }

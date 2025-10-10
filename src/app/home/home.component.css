@@ -88,30 +88,53 @@ header h1 {
 
 
 
-/* Sektionen med mörkgrå bakgrund */
+/* Sektion med videobakgrund */
 .introduction {
-  background-color: #333; /* mörkgrå */
-  padding: 4rem 2rem;
+  position: relative;
+  height: 100vh; /* fyller hela skärmen */
+  overflow: hidden;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  color: white;
+
+  display: flex;
+  align-items: center; /* vertikal centrering */
+  justify-content: center; /* horisontell centrering */
+  padding: 0 2rem;
 }
 
-/* Rubrik (vit, fet) */
-.introduction h2 {
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fyller sektionen utan att sträcka videon */
+  z-index: 1; /* ligger bakom texten */
+  filter: brightness(0.4); /* gör videon mörkare */
+}
+
+/* Wrapper för text och knappar */
+.intro-content {
+  position: relative;
+  z-index: 2; /* ovanpå videon */
+}
+
+/* Rubrik och text */
+.intro-content h2 {
   font-size: 2rem;
-  color: white;
   font-weight: bold;
+  color: white;
   margin-bottom: 1rem;
 }
 
-/* Brödtext (vit) */
-.introduction p {
-  color: white;
+.intro-content p {
   font-size: 1.1rem;
+  color: white;
   margin-bottom: 2rem;
 }
 
-/* Knappar bredvid varandra */
+/* Knappar */
 .button-group {
   display: flex;
   justify-content: center;
