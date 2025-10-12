@@ -14,4 +14,8 @@ export class SchoolProjectsComponent {
   window.open(url, '_blank');
 }
 
+ngOnInit() {
+    window.scrollTo(0, 0); // direkt till toppen utan smooth scroll
+  }
+
 }

@@ -1,6 +1,8 @@
 /* Importera Roboto från Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@media (min-width: 768px) { /* Desktop */
+
+@media (min-width: 768px)  { /* Desktop */
+
 /* Sektion med vit bakgrund */
 .skills-section {
   background-color: white;
@@ -14,6 +16,7 @@
   align-items: center;
   gap: 2rem;
   margin-bottom: 3rem;
+ flex-direction: row;
 }
 
 /* Bilden till vänster */

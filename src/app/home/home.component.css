@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-@media (min-width: 768px) { /* Desktop */
+@media (min-width: 768px)  { /* desktop */
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    gap: 2rem;
+  }
 
 html {
   scroll-behavior: smooth;
@@ -22,7 +28,6 @@ header.header {
 .header-left {
   display: flex;
   align-items: center;
-  flex-direction: row; /* säkerställer horisontell layout */
   gap: 1rem; /* lite mer luft mellan logga och text */
   background-color: white;
   font-family: 'Roboto', sans-serif;
@@ -53,7 +58,7 @@ header.header {
 
 /* H1-stil */
 header h1 {
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   white-space: nowrap; /* förhindrar att brytas till ny rad */
   margin: 0;
@@ -66,8 +71,9 @@ header h1 {
   display: flex;
   gap: 2rem;
   list-style: none;
-  margin-left: 30rem; /* avstånd från logon */
+  margin-left: 20rem; /* avstånd från logon */
   padding: 0;
+  flex-direction: row;
 }
 
 .header-meny a {
@@ -217,6 +223,5 @@ header h1 {
 }
 
 }
-
 
 

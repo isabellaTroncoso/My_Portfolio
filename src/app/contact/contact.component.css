@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@media (min-width: 768px)  { /* Desktop */
 
 .contact-container {
       display: flex;
@@ -5,6 +8,7 @@
       gap: 2rem;
       padding: 2rem;
       align-items: flex-start;
+      flex-direction: row;
     }
 
     .contact-left {
@@ -66,6 +70,7 @@
       font-weight: 600;
       border-radius: 4px;
       transition: background-color 0.3s ease;
+      font-size: 1rem;
     }
 
     .contact-form button.btn:hover:not(:disabled) {
@@ -77,8 +82,18 @@
       cursor: not-allowed;
     }
 
-    @media (max-width: 767px) {
-      .contact-container {
-        flex-direction: column;
-      }
-    }
+  .thank-you-message {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  animation: fadeIn 0.5s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+}

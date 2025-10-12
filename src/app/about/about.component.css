@@ -1,12 +1,15 @@
 /* Importera Roboto från Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@media (min-width: 768px) { /* Desktop */
+
+@media (min-width: 768px)  { /* Desktop */
+
 .about-me-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
    padding: 2rem 1rem; 
   align-items: flex-start;
+   flex-direction: row; 
 }
 
 .about-left {
@@ -71,11 +74,11 @@
 }
 
 .profile-image img {
-  width: 250px;      /* kan justeras efter behov */
-  height: 250px;     /* håller kvadratisk form */
-  object-fit: cover; /* beskär bilden snyggt om den är större än 150x150 */
-  border-radius: 50%; /* rund profilbild */
-  border: 3px solid #333; /* valfritt, snygg ram */
+  width: 250px;      
+  height: 250px;    
+  object-fit: cover; 
+  border-radius: 50%; 
+  border: 3px solid #333; 
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
@@ -137,6 +140,4 @@ button.btn {
 h2, h3, p, ul {
   font-family: 'Roboto', sans-serif;
 }
-
-
 }
