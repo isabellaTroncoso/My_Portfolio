@@ -1,63 +1,73 @@
 <header class="header">
-<header class="header-left">
- <div class="logo">
-    <a href="https://www.linkedin.com/in/isabella-troncoso-76143b332/" target="_blank" rel="noopener noreferrer">
-      <img src="/logo/link.png" alt="Logo" />
-    </a>
-  
+  <div class="header-left">
+    <!-- Hamburger-knapp först (vänster på mobil) -->
+    <button class="menu-toggle" aria-label="Toggle menu" (click)="toggleMenu()">
+      {{ menuOpen ? '✖' : '☰' }}
+    </button>
 
-  <h1>Isabella Troncoso | Developer</h1>
+    <!-- Logotyp + titel -->
+    <div class="logo">
+      <a href="https://www.linkedin.com/in/isabella-troncoso-76143b332/" target="_blank" rel="noopener noreferrer">
+        <img src="/logo/link.png" alt="Logo" />
+      </a>
+      <h1>Isabella Troncoso | Developer</h1>
+    </div>
   </div>
 
-  <nav class="header-meny">
+  <!-- Desktop-meny -->
+  <nav class="desktop-menu">
     <ul>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  </header>
+
+  <!-- Mobil-meny -->
+  <nav class="mobile-menu" [class.open]="menuOpen">
+    <ul>
+      <li><a href="javascript:void(0)" (click)="scrollTo('projects')">Projects</a></li>
+      <li><a href="javascript:void(0)" (click)="scrollTo('about')">About</a></li>
+      <li><a href="javascript:void(0)" (click)="scrollTo('contact')">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
   <section id="home" class="introduction">
-<!-- Videobakgrund -->
-  <video autoplay muted loop playsinline class="background-video">
-    <source src="/videos/nice.mp4" type="video/mp4">
-    Din webbläsare stödjer inte videon.
-  </video>
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="/videos/nice.mp4" type="video/mp4">
+      Din webbläsare stödjer inte videon.
+    </video>
 
-   <div class="intro-content">
-    <h2>Welcome to My Portfolio</h2>
-    <p>Showcasing my work as a Java Full-stack Developer</p>
-    <div class = "button-group">
-    <a class="btn btn-light" href="/cv/IsabellaTroncosoCVv.pdf" download>Download my CV</a>
-    <a href="https://github.com/isabellaTroncoso/My_Portfolio" target="_blank" rel="noopener" class="github-btn">
-  <img src="/logo/Github-Logo2.png" alt="GitHub">
-</a>
-    </div>
+    <div class="intro-content">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Showcasing my work as a Java Full-stack Developer</p>
+      <div class="button-group">
+        <a class="btn btn-light" href="/cv/IsabellaTroncosoCVv.pdf" download>Download my CV</a>
+        <a href="https://github.com/isabellaTroncoso/My_Portfolio" target="_blank" rel="noopener" class="github-btn">
+          <img src="/logo/Github-Logo2.png" alt="GitHub">
+        </a>
+      </div>
     </div>
   </section>
 
   <app-projects></app-projects>
-
   <app-about></app-about>
-
-  
   <app-contact></app-contact>
-
 </main>
 
 <footer class="site-footer">
   <div class="footer-content">
-    <p>© 2025 My Portfolio</p> | 
-    <p>Isabella Troncoso</p> |
+    <p>© 2025 My Portfolio</p>
+    <p>Isabella Troncoso</p>
     <p>
       <a href="https://www.linkedin.com/in/isabella-troncoso-76143b332/" target="_blank" rel="noopener">LinkedIn</a> |
       <a href="https://github.com/isabellaTroncoso" target="_blank" rel="noopener">Github</a>
     </p>
   </div>
 </footer>
+
 
         
       

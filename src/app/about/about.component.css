@@ -1,19 +1,17 @@
-/* Importera Roboto från Google Fonts */
+/* === Importera Roboto från Google Fonts === */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@media (min-width: 768px)  { /* Desktop */
-
+/* === BAS (Desktop) === */
 .about-me-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-   padding: 2rem 1rem; 
+  padding: 2rem 1rem;
   align-items: flex-start;
-   flex-direction: row; 
+  font-family: 'Roboto', sans-serif;
 }
 
 .about-left {
-  font-family: 'Roboto', sans-serif;
   color: #222;
   line-height: 1.6;
   max-width: 600px;
@@ -66,23 +64,24 @@
   transform: translateY(2px);
 }
 
+/* Profilbild */
 .profile-image {
   display: flex;
-  justify-content: center; /* centrerar bilden */
+  justify-content: center;
   margin-bottom: 1rem;
   margin-top: -25px;
 }
 
 .profile-image img {
-  width: 250px;      
-  height: 250px;    
-  object-fit: cover; 
-  border-radius: 50%; 
-  border: 3px solid #333; 
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #333;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-
+/* About Right */
 .about-right {
   flex: 1;
   min-width: 300px;
@@ -101,7 +100,7 @@
 }
 
 .icon-title img {
-  width: 100px; 
+  width: 100px;
   height: auto;
   object-fit: contain;
 }
@@ -122,7 +121,6 @@ ul {
   margin: 0;
 }
 
-
 button.btn {
   margin-top: 1rem;
   background-color: black;
@@ -136,8 +134,67 @@ button.btn {
   transition: background-color 0.3s ease;
 }
 
-/* Övrig typografi */
-h2, h3, p, ul {
-  font-family: 'Roboto', sans-serif;
+/* === MOBILE STYLING === */
+@media (max-width: 767px) {
+  .about-me-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .about-left, .about-right {
+    max-width: 100%;
+  }
+
+  .about-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .about-left p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    margin-top: 0px;
+  }
+
+  .read-toggle {
+    font-size: 0.95rem;
+  }
+
+  .section-with-icon {
+    margin-bottom: 1.5rem;
+  }
+
+  .icon-title {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .icon-title img {
+    width: 60px;
+    height: auto;
+  }
+
+  .text-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+  }
+
+  button.btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+  }
 }
-}
+
