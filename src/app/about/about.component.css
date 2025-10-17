@@ -67,16 +67,16 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  margin-top: -25px;
+  margin-top: -1.5625rem;
 }
 
 .profile-image img {
-  width: 250px;
-  height: 250px;
+  width: 15.625rem;           /* 250px / 16 = 15.625rem */
+  height: 15.625rem;          /* 250px / 16 = 15.625rem */
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 0.1875rem solid #333;  /* 3px / 16 = 0.1875rem */
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.2); 
 }
 
 /* About Right */
@@ -136,8 +136,9 @@ button.btn {
 @media (max-width: 767px) {
   .about-me-container {
     flex-direction: column;
-    padding: 1rem;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 2rem; 
+    padding: 1.5rem;
   }
 
   .about-left, .about-right {
@@ -155,10 +156,19 @@ button.btn {
   }
 
   .profile-image img {
-    width: 150px;
-    height: 150px;
-    margin-top: 0px;
+    width: 9.375rem;        
+  height: 9.375rem;          
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
   }
+
+  .profile-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.625rem;       
+  margin-bottom: 1.25rem;
+}
 
   .read-toggle {
     font-size: 0.95rem;

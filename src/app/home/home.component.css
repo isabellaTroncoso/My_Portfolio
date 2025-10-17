@@ -261,17 +261,19 @@ header h1 {
 }
 
 /* === MOBILE === */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header.header {
-    grid-template-columns: auto 1fr;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-items: center;     
+    align-items: center;        
     padding: 1rem;
   }
 
   .header-left {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 0.75rem;
   }
 
@@ -296,6 +298,9 @@ header h1 {
   header h1 {
     font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
+     text-align: center;
+    margin: 0;
+    white-space: normal;
   }
 
   .desktop-menu {
