@@ -1,9 +1,43 @@
- Welcome! 
+# 🌐 Portfolio – Examensarbete
 
-Hi there! My name is Isabella Troncoso, and I’m a passionate Java Full-stack Developer with a love for building clean, efficient, and user-friendly web applications.
+## 📝 Projektbeskrivning
+Detta projekt är en personlig portfolio skapad för att presentera mina tidigare projekt, tekniska färdigheter och min utvecklingsresa som webbutvecklare. Webbplatsen är byggd med fokus på responsiv design, tydlig struktur och modern estetik.
 
-This repository showcases my personal projects, experiments, and coding challenges that reflect my journey as a developer. Here, you’ll find examples of my work, from front-end interfaces to back-end logic, with an emphasis on best practices, maintainable code, and real-world functionality.
+## 🧠 Syfte och mål
+Syftet med projektet är att vidareutveckla min tidigare portfolio (vårterminen 2025) för att visa progression inom design, struktur, kodkvalitet och teknisk förståelse.  
+Målet är att skapa en professionell, användarvänlig och tekniskt välbyggd portfolio som kan användas i framtida jobbsök och som exempel på mitt arbete.
 
-I’m always eager to learn new technologies, collaborate with fellow developers, and tackle interesting problems. If you’re curious about my work, want to discuss ideas, or explore potential collaborations, feel free to reach out!
+## ⚙️ Teknikstack
+- **HTML**, **CSS**, **TypeScript**
+- Responsiv design (Flexbox & Grid)
+- Vercel (hosting & deployment)
+- Git & GitHub (versionshantering)
+- Visual Studio Code
+- Ramverk - Angular
 
-Thank you for stopping by, and enjoy exploring my projects.
+## 🚀 Förbättringar jämfört med tidigare version
+- Omstrukturerad layout med bättre mobilanpassning.
+- Modernare design med tydligare kontrast och luft.
+- Förbättrad kodstruktur och återanvändbar CSS.
+- Tydligare sektioner (About, Projects, Contact).
+- Animationer / responsiva bilder.
+
+## 💬 Reflektioner och lärdomar
+Under utvecklingen av denna version har jag:
+- Förbättrat förståelsen för responsiv design.
+- Lärt mig strukturera kod enligt best practices.
+- Förstått vikten av versionshantering (Git commits, dokumentation).
+- Fått bättre känsla för design.
+- Arbetat mer självständigt och medvetet i utvecklingsprocessen.
+
+
+## 📈 Progression
+| Termin | Fokus | Resultat |
+|--------|--------|-----------|
+| Vårtermin 2025  | React Project + UX/java sammarbete | Eggspert app
+| Sommar    2025  | New project, basic design/layout | Angular - portfolio
+| Hösttermin 2025 | Fördjupning / Examensarbete | Förbättrad design, modern kod, README, reflektion|
+
+## 👩‍💻 Författare
+**Isabella Troncoso**  
+Webbutvecklare | Frontend | Fullstack | Portfolio-projekt 2025
