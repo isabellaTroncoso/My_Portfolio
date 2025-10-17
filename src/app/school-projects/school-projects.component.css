@@ -1,0 +1,131 @@
+/* === Importera Roboto === */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.school-projects {
+  padding: 3rem 2rem;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+  min-height: 100vh;
+  text-align: center;
+  color: #000;
+}
+
+/* === Back header === */
+.back-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* === Titel === */
+.school-projects h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.school-projects h2::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.25rem;
+  background-color: #000;
+  margin: 1rem auto 0;
+  border-radius: 0.25rem;
+}
+
+/* === Projektkorten (Grid) === */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+/* === Enskilt kort === */
+.project-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 20rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+/* === Bild i kortet === */
+.project-card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* === Kortets text === */
+.project-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* === Responsivitet === */
+@media (max-width: 768px) {
+  .school-projects {
+    padding: 2rem 1rem;
+  }
+
+  .back-header {
+    text-align: center;
+  }
+
+  .school-projects h2 {
+    font-size: 1.75rem;
+  }
+
+  .project-cards {
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .project-card img {
+    height: 8rem;
+  }
+}

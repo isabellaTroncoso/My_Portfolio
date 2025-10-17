@@ -1,25 +1,33 @@
 <section id="about" class="about-me-container">
    <div class="about-left">
-    <h2>About Me</h2>
-    <p>
-  I’m a passionate Java full-stack developer who loves building responsive and dynamic web applications. 
+
+    <!-- Profilbild -->
+  <div class="profile-image">
+    <img src="/about/bella.JPG" alt="Isabella Troncoso">
+  </div>
+
+   <h2>About Me</h2>
+<p>
+  I’m a curious and driven Java full-stack developer who loves creating modern, responsive, and user-friendly applications.
+  I’m passionate about learning new technologies and continuously finding smarter ways to solve problems.
 </p>
 
-<!-- Visa Read More-knappen när showMore är FALSE -->
-<button *ngIf="!showMore" (click)="toggleReadMore()" class="btn btn-dark">
-  Read More
+<button *ngIf="!showMore" (click)="toggleReadMore()" class="read-toggle">
+  Read more <span class="arrow">▼</span>
 </button>
 
-<!-- Visa text + Read Less-knappen när showMore är TRUE -->
 <div *ngIf="showMore" @fadeSlide class="more-info">
   <p>
-    I have hands-on experience with Java, Spring Boot, Angular, and REST APIs. I enjoy problem-solving and
-    continuously improving my skills through projects and collaboration. I am highly motivated, detail-oriented and
-    enjoy learning new technologies to deliver high-quality work.
+    I grow the most when I step outside my comfort zone — that’s where I learn fastest and uncover new ways to improve.
+   I embrace challenges as opportunities to sharpen my skills and expand my knowledge.
+  </p>
+  <p>
+    My goal is to keep evolving as a developer, taking ownership of my contributions in every project, 
+    and constantly pushing myself to build better solutions.
   </p>
 
-  <button (click)="toggleReadMore()" class="btn btn-dark">
-    Read Less
+  <button (click)="toggleReadMore()" class="read-toggle">
+    Read less <span class="arrow up">▲</span>
   </button>
 </div>
   </div>
@@ -30,8 +38,8 @@
       <img src="/about/yh.png" alt="Education icon" />
       <div class="text-content">
         <h3>Education</h3>
+         <p>Technical Institute Stockholm Vocational University, 2024 - 2026, <strong> Java Developer</strong></p>
         <p>Fredrika Bremer High School, 2015 - 2018, <strong> Graphic Media</strong> </p>
-        <p>Technical Institute Stockholm Vocational University, 2024 - 2026, <strong> Java Developer</strong></p>
       </div>
     </div>
   </div>
@@ -41,9 +49,8 @@
       <img src="/about/java.png" alt="Skills icon" />
       <div class="text-content">
         <h3>Skills</h3>
-        <p>Java, Spring Boot, REACT, Angular</p>
-        <p>HTML, CSS, REST API, TypeScript</p>
-        <p>SQL, Git, TestDriving</p>
+        <p>Java, Spring Boot, REACT, Angular, HTML, CSS, REST API, TypeScript, JavaScript, Frontend,
+        SQL (NoSql), Git, TestDriving, Cloud platforms, Java Enterprice</p>
       </div>
     </div>
   </div>
@@ -53,10 +60,10 @@
       <img src="/about/books.png" alt="Hobbies icon" />
       <div class="text-content">
         <h3>Hobbies</h3>
-        <p>Coding side-projects</p>
-        <p>Reading Books (goal: 50 books a year)</p>
-        <p>Play instrument electric bass</p>
-        <p>Go to the gym</p>
+        <p>> Coding side-projects</p>
+        <p>> Reading Books (goal: 50 books a year)</p>
+        <p>> Play instrument: Electric bass</p>
+        <p>> Go to the gym</p>
       </div>
     </div>
   </div>
