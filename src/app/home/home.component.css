@@ -167,13 +167,53 @@ header h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: -1;
   filter: brightness(0.4);
 }
 
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.overlay-photo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+
+.overlay-photo:nth-child(1) { top: 5%; left: 5%; }
+.overlay-photo:nth-child(2) { top: 5%; right: 5%; }
+.overlay-photo:nth-child(3) { bottom: 5%; left: 5%; }
+.overlay-photo:nth-child(4) { bottom: 5%; right: 5%; }
+.overlay-photo:nth-child(5) { top: 15%; left: 25%; }
+.overlay-photo:nth-child(6) { top: 20%; right: 30%; }
+.overlay-photo:nth-child(7) { bottom: 15%; left: 20%; }
+.overlay-photo:nth-child(8) { bottom: 20%; right: 25%; }
+.overlay-photo:nth-child(9) { top: 30%; left: 10%; }
+.overlay-photo:nth-child(10){ top: 25%; right: 15%; }
+.overlay-photo:nth-child(11){ bottom: 25%; left: 15%; }
+.overlay-photo:nth-child(12){ bottom: 30%; right: 10%; }
+.overlay-photo:nth-child(13){ top: 10%; right: 45%; }
+
+.overlay-photo.active {
+  opacity: 1;
+}
+
+
 .intro-content {
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .intro-content h2 {
@@ -310,6 +350,21 @@ header h1 {
   .mobile-menu.open {
     display: block;
   }
+
+    .overlay-photo:nth-child(1) { top: 5%; left: 5%; }
+  .overlay-photo:nth-child(2) { top: 5%; right: 5%; }
+  .overlay-photo:nth-child(3) { bottom: 8%; left: 5%; }  
+  .overlay-photo:nth-child(4) { bottom: 8%; right: 5%; }  
+  .overlay-photo:nth-child(5) { top: 12%; left: 20%; }
+  .overlay-photo:nth-child(6) { top: 14%; right: 25%; }
+  .overlay-photo:nth-child(7) { bottom: 15%; left: 15%; }
+  .overlay-photo:nth-child(8) { bottom: 12%; right: 20%; } 
+  .overlay-photo:nth-child(9) { top: 18%; left: 10%; }
+  .overlay-photo:nth-child(10){ top: 16%; right: 15%; }
+  .overlay-photo:nth-child(11){ bottom: 20%; left: 12%; }  
+  .overlay-photo:nth-child(12){ bottom: 22%; right: 12%; } 
+  .overlay-photo:nth-child(13){ top: 8%; right: 35%; }
+
 
   /* Footer mobile */
   .footer-content {
