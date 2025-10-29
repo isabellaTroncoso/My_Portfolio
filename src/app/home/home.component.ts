@@ -9,33 +9,43 @@ import { ContactComponent } from '../contact/contact.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements AfterViewInit{
+export class HomeComponent implements AfterViewInit {
 
-    menuOpen = false; // ← styr om menyn är öppen eller stängd
+  menuOpen = false;
 
-   constructor() { }
+  constructor() { }
 
   ngAfterViewInit() {
+    
     const video: HTMLVideoElement | null = document.querySelector('.background-video');
     if (video) {
-      video.muted = true; 
+      video.muted = true;
       video.play().catch(err => console.log('Autoplay blocked:', err));
     }
-  }
 
-  scrollTo(id: string) {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' });
-    this.menuOpen = false; // stäng hamburgermeny efter scroll
+     const photos: NodeListOf<HTMLElement> = document.querySelectorAll('.overlay-photo');
+  let current = 0;
+
+  if (photos.length > 0) {
+    photos[current].classList.add('active');
+
+    setInterval(() => {
+      photos[current].classList.remove('active');
+      current = (current + 1) % photos.length;
+      photos[current].classList.add('active');
+    }, 3000);
   }
 }
 
+  scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      this.menuOpen = false;
+    }
+  }
 
-   // ← anropas när användaren trycker på hamburger-knappen
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
   }
-
-
 }
