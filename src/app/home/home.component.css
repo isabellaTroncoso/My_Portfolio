@@ -182,8 +182,8 @@ header h1 {
 
 .overlay-photo {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 310px;
+  height: 310px;
   border-radius: 50%;
   object-fit: cover;
   opacity: 0;
